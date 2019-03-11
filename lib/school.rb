@@ -1,14 +1,14 @@
 class School
   @roster = {}
-  
+
   def initialize(name)
     @name = name
-  end 
+  end
 
   def add_student(student_name, grade)
     if !roster.include?(grade)
       roster[grade] = []
-    end 
+    end
     roster[grade] << student_name
   end
     
